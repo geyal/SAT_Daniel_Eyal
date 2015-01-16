@@ -1,6 +1,38 @@
 <html>
 <body>
-Hi Eyal it is Daniel
-<img src="cloud.jpg" alt="The official HTML5 Icon">
+      <!--<form method="post" action=mullerdm@gmail.com>
+            Email:<input type="text" name="Email" size="12" maxlength="12" />
+            Clauses:<input class="FormElement" name="term" id="term" type="text" />
+            Clauses:<textarea cols="25" rows="7"></textarea>
+            <br />
+            <input type="submit" value="Send Email" />
+      </form> -->
+      <!-- <img src="cloud.jpg" alt="The official HTML5 Icon">  -->
+      <form id='sampleform' method='post' action='' >
+     </p>
+     <p>
+     Email: <input type='text' name='Email' />
+     </p>
+     <p>
+     clauses:<br/>
+     <textarea name="comments" rows="7" cols="30"></textarea>
+     </p>
+     <p>
+     <input type='submit' name='Submit' value='Submit' />
+     </p>
+
+     <?php
+
+     if(isset($_POST['Sbmit'])) {
+     echo "hello";
+     }
+
+            echo "Hello World";
+            $Email = $_POST['Email'];
+            $clauses = $_POST['clauses'];
+            echo(" selected")
+
+     ?>
+</form>
 </body>
 </html>
