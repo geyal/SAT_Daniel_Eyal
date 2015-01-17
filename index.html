@@ -8,31 +8,26 @@
             <input type="submit" value="Send Email" />
       </form> -->
       <!-- <img src="cloud.jpg" alt="The official HTML5 Icon">  -->
-      <form id='sampleform' method='post' action='' >
-     </p>
-     <p>
-     Email: <input type='text' name='Email' />
-     </p>
-     <p>
-     clauses:<br/>
-     <textarea name="comments" rows="7" cols="30"></textarea>
-     </p>
-     <p>
-     <input type='submit' name='Submit' value='Submit' />
-     </p>
-
-     <?php
-
-     if(isset($_POST['Sbmit'])) {
-     echo "hello";
-     }
-
-            echo "Hello World";
-            $Email = $_POST['Email'];
-            $clauses = $_POST['clauses'];
-            echo(" selected")
-
-     ?>
-</form>
+     
+            <form id='sampleform' method='post' action='' >
+                  </p>
+                        <p>
+                              Email: <input type='email' name='Email' />
+                 </p>
+                 <p>
+                 clauses:<br/>
+                 <textarea name="comments" rows="7" cols="30"></textarea>
+                 </p>
+                 <p>
+                 <input type='submit' name='Submit' value='Submit' onclick="myFunction()" />
+                 </p>
+      
+            </form>
+            <script>
+                  function myFunction(elmnt,clr) 
+                  {
+                      elmnt.style.color = clr;
+                  }
+            </script>
 </body>
 </html>
