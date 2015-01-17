@@ -23,6 +23,19 @@
                  </p>
       
             </form>
+            <p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+
+<button onclick="myFunction2()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction2() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+            
+            
             <script>
                   function myFunction(elmnt,clr) 
                   {
